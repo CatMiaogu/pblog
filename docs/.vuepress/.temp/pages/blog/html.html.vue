@@ -133,4 +133,8 @@
 <p>效果：左右固定宽度，中间内容区自适应
 参考 <a href="https://segmentfault.com/a/1190000041713571" target="_blank" rel="noopener noreferrer">双飞翼/圣杯<ExternalLinkIcon/></a></p>
 </blockquote>
+<h3 id="_4-bfc-块级格式化上下文" tabindex="-1"><a class="header-anchor" href="#_4-bfc-块级格式化上下文" aria-hidden="true">#</a> 4. BFC(块级格式化上下文)</h3>
+<blockquote>
+<p>参考 https://zhuanlan.zhihu.com/p/127187654</p>
+</blockquote>
 </div></template>
