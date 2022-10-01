@@ -13,6 +13,8 @@ export const pagesComponents = {
   "v-15c92dcc": defineAsyncComponent(() => import(/* webpackChunkName: "v-15c92dcc" */"D:/workSpace/pblog/docs/.vuepress/.temp/pages/blog/html.html.vue")),
   // path: /blog/interview-from-online.html
   "v-d62637fa": defineAsyncComponent(() => import(/* webpackChunkName: "v-d62637fa" */"D:/workSpace/pblog/docs/.vuepress/.temp/pages/blog/interview-from-online.html.vue")),
+  // path: /blog/interview.html
+  "v-7b7b3b28": defineAsyncComponent(() => import(/* webpackChunkName: "v-7b7b3b28" */"D:/workSpace/pblog/docs/.vuepress/.temp/pages/blog/interview.html.vue")),
   // path: /blog/javascript.html
   "v-71306798": defineAsyncComponent(() => import(/* webpackChunkName: "v-71306798" */"D:/workSpace/pblog/docs/.vuepress/.temp/pages/blog/javascript.html.vue")),
   // path: /zh/

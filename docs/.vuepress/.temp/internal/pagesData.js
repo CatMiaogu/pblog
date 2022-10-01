@@ -11,6 +11,8 @@ export const pagesData = {
   "v-15c92dcc": () => import(/* webpackChunkName: "v-15c92dcc" */"D:/workSpace/pblog/docs/.vuepress/.temp/pages/blog/html.html.js").then(({ data }) => data),
   // path: /blog/interview-from-online.html
   "v-d62637fa": () => import(/* webpackChunkName: "v-d62637fa" */"D:/workSpace/pblog/docs/.vuepress/.temp/pages/blog/interview-from-online.html.js").then(({ data }) => data),
+  // path: /blog/interview.html
+  "v-7b7b3b28": () => import(/* webpackChunkName: "v-7b7b3b28" */"D:/workSpace/pblog/docs/.vuepress/.temp/pages/blog/interview.html.js").then(({ data }) => data),
   // path: /blog/javascript.html
   "v-71306798": () => import(/* webpackChunkName: "v-71306798" */"D:/workSpace/pblog/docs/.vuepress/.temp/pages/blog/javascript.html.js").then(({ data }) => data),
   // path: /zh/
