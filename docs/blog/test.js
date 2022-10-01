@@ -1,45 +1,36 @@
-let arr = [
-  { id: 1, name: '部门1', pid: 0 },
-  { id: 2, name: '部门2', pid: 1 },
-  { id: 3, name: '部门3', pid: 1 },
-  { id: 4, name: '部门4', pid: 3 },
-  { id: 5, name: '部门5', pid: 4 }
-]
+// let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// function shuffle(array) {
+//   let len = array.length;
+//   while (len) {
+//     let index = Math.floor(Math.random() * len--);
+//     [array[index], array[len]] = [array[len], array[index]];
+//   }
+//   return array;
+// }
+// console.log(shuffle(arr));
 
-const arrayToTree = (items) => {
-  const result = []
-  const itemMap = {} 
+// let b = [3, 2, 5, 7, 4, 8, 1, 6, 0, 9];
 
-  for (const item of items) {
-    const id = item.id
-    const pid = item.pid
-    
-    if(!itemMap[id]) {
-      itemMap[id] = {
-        children: []
-      }
+// 防抖
+function debounce(fn, wait) {
+  let timer = null;
+  return function () {
+    if (timer !== null) {
+      clearTimeout(timer);
     }
-    itemMap[id] = {
-      ...item, children: itemMap[id]['children']
-    }
-
-    const treeItem = itemMap[id]
-
-    if(pid === 0) {
-      result.push(treeItem)
-    } else {
-      if (!itemMap[pid]) {
-        itemMap[pid] = {
-          children: [],
-        }
-      }
-      itemMap[pid].children.push(treeItem)
-    }
-  }
-  return result
+    timer = setTimeout(fn, wait);
+  };
 }
-
-let j = JSON.stringify
-console.log(j(arrayToTree(arr)))
-
-
+// 节流
+function throttle(fn, wait) {
+  let prev = Date.now();
+  return function () {
+    let contxt = this;
+    let args = arguments;
+    var now = Date.now();
+    if (now - prev > wait) {
+      fn.apply(contxt, args);
+      prev = Date.now();
+    }
+  };
+}
